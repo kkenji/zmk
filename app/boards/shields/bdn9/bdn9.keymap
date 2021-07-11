@@ -3,6 +3,11 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -14,6 +19,8 @@
                 &mo 1       &kp UP          &kp RETURN
                 &kp LEFT    &kp DOWN        &kp RIGHT
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         function_layer {
