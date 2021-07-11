@@ -20,9 +20,9 @@
             label = "FUNCTION";
 
             bindings = <
-                &trans &rgb_ug RGB_TOG  &trans 
-                &trans &kp N1           &bootloader 
-                &kp N2 &kp N3           &kp N4 
+                &trans          &rgb_ug RGB_TOG &trans 
+                &trans          &rgb_ug RGB_BRI &bootloader 
+                &rgb_ug RGB_SPD &rgb_ug RGB_BRD &rgb_ug RGB_SPI 
             >;
         };
     };
