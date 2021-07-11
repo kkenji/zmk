@@ -1,0 +1,6 @@
+if BDN9
+
+config ZMK_KEYBOARD_NAME
+    default "BDN9"
+
+endif
